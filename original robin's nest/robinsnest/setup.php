@@ -44,8 +44,8 @@
   createTable('points',
             'user_id INT(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
             latitude float,
-            longitude float
-            time INT(11)
+            longitude float,
+            time INT(11),
             user VARCHAR(45)');
 ?>
 
