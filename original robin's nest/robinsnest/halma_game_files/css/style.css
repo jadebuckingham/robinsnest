@@ -1,0 +1,20 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+background {
+	width: 100%;
+    height: 100%;
+    background-color: #34495e;
+}
+
+#boardContainer {
+    width: 100%;
+    height: 100%;
+    background: #ecf0f1;
+}
