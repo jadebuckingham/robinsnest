@@ -9,9 +9,6 @@
 
 <?php // Example 26-3: setup.php
   require_once 'functions.php';
-  
-
-
 
   createTable('members',
               'user VARCHAR(16),
@@ -43,6 +40,13 @@
               'user VARCHAR(16),
               text VARCHAR(4096),
               INDEX(user(6))');
+      
+  createTable('points',
+            'user_id INT(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+            latitude float,
+            longitude float
+            time INT(11)
+            user VARCHAR(45)');
 ?>
 
     <br>...done.
