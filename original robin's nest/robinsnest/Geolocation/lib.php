@@ -1,18 +1,18 @@
 <?php
 
-  $dbhost  = 'localhost';    // Unlikely to require changing
-  $dbname  = 'robinsnest';   // Modify these...
-  $dbuser  = 'robinsnest';   // ...variables according
-  $dbpass  = 'rnpassword';   // ...to your installation
+  $dbhost  = 'mudfoot.doc.stu.mmu.ac.uk';    // Unlikely to require changing
+  $dbname  = 'buckingj';   // Modify these...
+  $dbuser  = 'buckingj';   // ...variables according
+  $dbpass  = 'Nossgool9';   // ...to your installation
   $appname = "Robin's Nest"; // ...and preference
 
  if (mysql_connect	(
-				$server,
-				$username,
-				$password
+				$dbhost,
+				$dbuser,
+				$dbpass
 			)) {
 			    mysql_select_db(
-				$database
+				$dbname
 			    );
 			} else {
 			    header($_SERVER['SERVER_PROTOCOL'] . ' 500 Internal Server Error', true, 500);
