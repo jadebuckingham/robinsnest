@@ -9,10 +9,18 @@
 
 <?php // Example 26-3: setup.php
   require_once 'functions.php';
+  
+
+
 
   createTable('members',
               'user VARCHAR(16),
               pass VARCHAR(16),
+			  email VARCHAR(50),
+			  gender VARCHAR(16),
+			  age VARCHAR(20),
+			  location VARCHAR(20),
+			  interests VARCHAR(20),
               INDEX(user(6))');
 
   createTable('messages', 
